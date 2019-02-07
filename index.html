@@ -6,22 +6,127 @@
     <title>Materialize</title>
     <link rel="stylesheet" href="materialize.min.css" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
 <style>
  .row .col{
     background-color:grey ;
     border:1px solid white;
 
 }
+.brand-logo{
+
+
+float:left ;
+max-height: 64px!important;
+padding: 15px 0!important;
+
+}
+.nav-wrapper{
+
+background-color:rgb(7, 82, 29);
+
+}
+
+.input-field input[type=search]:not(.browser-default)+label i{
+    color:#444;
+}
+.input-field input[type=search] ~ .material-icons{
+
+    color:#444;
+}
+
+ul li form{
+    margin-left:100%;
+    width: 150%;
+}
+
+
+  
 </style>
 
 </head>
 <body>
     
+        <nav>
+                <div class="nav-wrapper">
+                        <div class="container">
+                                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    
+                                <a href="#" class="brand-logo"><img src="MOIC 18-01"></a>
+                                    
+                                
+                                <ul>
+                                    <li>
+                                        <form>
+                                            <div class="input-field white">
+                                                <input  id="search" type="search">
+                                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                                <i class="material-icons">close</i>
+                                            </div>
+                                        </form>
+                                    </li>
+                                </ul>
+                                
+                                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                    
+                                           
+
+                                       
+                                
+                                  <li><a href="sass.html">Facebook</a></li>
+                                  <li><a href="badges.html">Twitter</a></li> 
+                                  <li><a href="#">
+                                        <i class="material-icons">home</i>
+                                      
+                                </a>
+                                <li><a href="#">
+                                        <i class="material-icons">email</i>
+                                      
+                                </a>
+
+                            </li>
+                            <li><a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                  
+                            </a>
+
+                        </li>
 
 
 
+                                </ul>
+                               
+                              </div>
+                              </div>
+                            </nav>
+                            <ul id="slide-out" class="sidenav">
+                                  <li><div class="user-view">
+                                    <div class="background">
+                                      <img src="images/office.jpg">
+                                    </div>
+                                    <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                                  </div></li>
+                                  <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                                  <li><a href="#!">Second Link</a></li>
+                                  <li><div class="divider"></div></li>
+                                  <li><a class="subheader">Subheader</a></li>
+                                  <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                                </ul>
+                            
+                             
 
 
+
+                            </div>
+                    </div>
+
+
+
+</nav>
   
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="materialize.min.js"></script>
